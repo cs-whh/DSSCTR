@@ -1,0 +1,27 @@
+Dataset: tiny-imageNet
+model: ibot_vitb16
+
+features_extract:
+  image_size: 224
+  all_patch_features: False
+  features_save_dir: ./features/
+
+train:
+  lambda1: 1
+  lambda2: 1
+  lambda3: 1
+  lambda4: 1
+  lambda5: 100
+  lr: 0.00001
+  epochs: 20001
+  eval_epochs: 5000
+
+
+cluster:
+  num_cluster: 200
+  dim_subspace: 12
+  ro: 8
+  alpha: 0.04
+
+
+

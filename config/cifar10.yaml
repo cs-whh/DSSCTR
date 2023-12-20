@@ -1,0 +1,28 @@
+Dataset: cifar10
+model: ibot_vitb16
+
+
+features_extract:
+  image_size: 80
+  all_patch_features: False
+  features_save_dir: ./features/
+
+train:
+  lambda1: 1
+  lambda2: 1
+  lambda3: 1
+  lambda4: 1
+  lambda5: 1
+  lr: 0.00001
+  epochs: 5001
+  eval_epochs: 5000
+
+
+cluster:
+  num_cluster: 10
+  dim_subspace: 12
+  ro: 8
+  alpha: 0.04
+
+
+
